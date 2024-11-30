@@ -1,3 +1,11 @@
 # credit-risk-classification
 
-# Solution: I used someone's repo as reference for my work and code.https://github.com/Shivabajelan/credit-risk-classification.git
+# Background: In this challenge, I was asked to use various techniques to train and evaluate a model based on loan risk. The dataset being used is of historical lending activity from a peer-to-peer lending services company to build a model that can identify the creditworthiness of borrowers. 
+
+# Solution: To complete this assignment,  I used this repo as reference for my work and code https://github.com/Shivabajelan/credit-risk-classification.git After downloading the starter files, I split the data into Training and Testing Sets, created a logistic regression model with the original data, and wrote a credit risk analysis report. 
+
+# Splitting the Data : Using pandas, I read the lending_data.csv file data from the Resources folder into a Pandas DataFrame. I created the label sets (y) from the "loan_status" column, and then created the features (x) DataFrame from the remaining columns. Also as a note, a value of 0 in the "loan_status" column means that the loan is healthy, and a value of 1 means that the loan is high risk. Then, I split the data into training and testing datasets by using train_test_splt.
+
+# Create a Logistic Regression Model: I fit a logistic regression model by using the training data (x_train and y_train). I saved the predictions for the testing model data labels by using the testing feature data (x_test) and the fitted model. The model's performance was evaluated by generating a confusion matrix and printing a classification report. Next, I had to answer how well the logstic regression model predict both the 0 (healthy loan) and 1 (high-risk loan) labels. I determined that the resampled logistic regression model shows an accurate prediction of healthy, low-risk loans with a precision of 100%. On the other hand, it forecasts high-risk loans with a precision of 87%. 
+
+# Credit Analysis report: Finally, I wrote a brief report that included a summary and analysis of the performance of the machine learning models that were used to complete thus task. It includes the purpose of the analysis, describes the accuracy score, precision score, adna recall score of the machine learning model, as well as a summary of the reults from the machine learning model. 
